@@ -138,15 +138,15 @@ USE_TZ = True
 mimetypes.add_type("text/css", ".css", True)
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = (
-    BASE_DIR / 'base_static',
-)
+# STATICFILES_DIRS = (
+#     BASE_DIR / 'base_static',
+# )
 STATIC_ROOT = BASE_DIR / 'static' # collectstatics
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
