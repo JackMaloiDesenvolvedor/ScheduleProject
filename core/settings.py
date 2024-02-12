@@ -138,9 +138,9 @@ USE_TZ = True
 mimetypes.add_type("text/css", ".css", True)
 
 STATIC_URL = 'static/'
-# STATICFILES_DIRS = (
-#     BASE_DIR / 'base_static',
-# )
+STATICFILES_DIRS = (
+    BASE_DIR / 'base_static',
+)
 STATIC_ROOT = BASE_DIR / 'static' # collectstatics
 
 MEDIA_URL = 'media/'
